@@ -1,124 +1,290 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nur Alfiyanti | Portfolio</title>
+  <meta name="description"
+    content="Portofolio Nur Alfiyanti - Frontend & Mobile Developer | UI/UX Enthusiast. Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang.">
+  <meta property="og:title" content="Nur Alfiyanti | Portofolio">
+  <meta property="og:description" content="Frontend & Mobile Developer | UI/UX Enthusiast">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/FotoKTM-removebg-preview.png">
+  <title>Nur Alfiyanti | Portofolio</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%233b5a8a'/><text x='50%' y='55%' font-family='sans-serif' font-weight='bold' font-size='46' fill='white' dominant-baseline='middle' text-anchor='middle'>NA</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header class="navbar-wrapper">
     <nav class="navbar container">
-      <a href="#" class="brand-logo">Nur Alfiyanti</a>
-      <ul class="nav-links">
-        <li><a href="#tentang" class="nav-link">Tentang</a></li>
-        <li><a href="#portofolio" class="nav-link">Portofolio</a></li>
-        <li><a href="#kontak" class="nav-link">Kontak</a></li>
-      </ul>
+      <a href="#" class="brand">Nur Alfiyanti</a>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#tentang" class="nav-link">Tentang</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#proyek" class="nav-link">Proyek</a></li>
+          <li><a href="#pengalaman" class="nav-link">Pengalaman</a></li>
+          <li id="nav-item-prestasi" style="display: none;"><a href="#prestasi" class="nav-link">Prestasi</a></li>
+          <li><a href="#kontak" class="nav-link">Kontak</a></li>
+        </ul>
+        <a href="assets/CV_Nur_Alfiyanti.pdf" class="btn btn-outline btn-sm nav-cv" target="_blank"
+          rel="noopener noreferrer">Lihat CV</a>
+      </div>
+      <div class="nav-controls">
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menu navigasi">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
   </header>
 
   <main>
-    <section id="tentang" class="hero-section">
+    <section class="hero-section" id="hero">
       <div class="container hero-container">
-        <div class="hero-image-wrapper">
-          <img src="assets/FotoKTM-removebg-preview.png" alt="Nur Alfiyanti" class="profile-img">
+        <div class="hero-image-wrap">
+          <img src="assets/FotoKTM-removebg-preview.png" alt="Foto Profil Nur Alfiyanti" class="profile-img" width="270"
+            height="270">
         </div>
-        <div class="hero-content">
-          <span class="badge">Selamat Datang</span>
-          <h1 class="hero-title">Halo, saya <span>Nur Alfiyanti</span></h1>
-          <p class="hero-subtitle">Graphic &amp; Visual Design Enthusiast | Frontend Learner</p>
-          <p class="hero-description">
-            Saya mahasiswa D-IV Teknik Informatika di Politeknik Negeri Malang yang memiliki minat mendalam pada desain visual dan frontend development. Senang menciptakan rancangan antarmuka yang estetis, komunikatif, responsif, dan mudah digunakan.
+        <div class="hero-text">
+          <h1 class="hero-name">Nur Alfiyanti</h1>
+          <p class="hero-headline">Frontend & Mobile Developer | UI/UX Enthusiast</p>
+          <p class="hero-desc">
+            Mahasiswa D-IV Teknik Informatika Politeknik Negeri Malang yang berfokus pada pengembangan aplikasi web dan
+            mobile (Flutter, Laravel), serta memiliki ketertarikan pada desain UI/UX.
           </p>
-          <div class="hero-actions">
-            <a href="#portofolio" class="btn btn-primary">Lihat Portofolio</a>
-            <a href="#kontak" class="btn btn-secondary">Hubungi Saya</a>
+          <div class="hero-buttons">
+            <a href="#proyek" class="btn btn-primary">Lihat Proyek</a>
+            <a href="assets/CV_Nur_Alfiyanti.pdf" class="btn btn-outline" target="_blank"
+              rel="noopener noreferrer">Lihat CV</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="portofolio" class="portfolio-section">
+    <section class="section" id="tentang">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Karya Portofolio</h2>
-          <p class="section-subtitle">Koleksi eksplorasi desain visual, tata letak antarmuka, dan estetika digital terkini.</p>
+        <h2 class="section-title">Tentang & Pendidikan</h2>
+        <div class="about-grid">
+          <div class="card fade-in">
+            <h3 class="card-title">Profil</h3>
+            <p class="card-desc">
+              Mahasiswa Program Studi D-IV Teknik Informatika, Jurusan Teknologi Informasi, Politeknik Negeri Malang
+              angkatan 2024. Berpengalaman dalam perancangan arsitektur sistem, pengelolaan basis data, dan pengujian
+              perangkat lunak (QA) melalui proyek perkuliahan. Selain itu, aktif sebagai Staf Ahli Divisi Kominfo
+              FORMADIKSI Polinema yang bertanggung jawab pada desain visual menggunakan Canva dan CapCut.
+            </p>
+          </div>
+          <div class="card fade-in">
+            <h3 class="card-title">Pendidikan</h3>
+            <div class="edu-item">
+              <span class="edu-year">2024 - 2028</span>
+              <h4 class="edu-degree">D-IV Teknik Informatika</h4>
+              <p class="edu-school">Jurusan Teknologi Informasi, Politeknik Negeri Malang</p>
+            </div>
+          </div>
         </div>
-        <div class="portfolio-grid">
-          <article class="portfolio-card">
-            <div class="portfolio-image-box">
-              <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&w=800&q=80" alt="E-Commerce Mobile App Design">
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-list fade-in">
+          <div class="skill-row">
+            <span class="skill-label">Frontend & Mobile</span>
+            <span class="skill-items">Flutter, HTML, CSS, Tailwind CSS</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Backend & Database</span>
+            <span class="skill-items">Laravel, PHP, PostgreSQL, REST API</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Design</span>
+            <span class="skill-items">Canva, UI/UX</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">QA & Dokumentasi</span>
+            <span class="skill-items">SKPL, ERD, Pengujian Sistem</span>
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Tools</span>
+            <span class="skill-items">Git/GitHub, Figma, Postman, VS Code, Laragon, DBeaver</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="proyek">
+      <div class="container">
+        <h2 class="section-title">Proyek Unggulan</h2>
+        <div class="projects-grid">
+          <article class="project-card fade-in">
+            <div class="project-thumb">
+              <img src="assets/Tampilan Mobile App Halaman Dashboard.png"
+                alt="Gayaku, Aplikasi Mobile Rekomendasi Outfit" width="480" height="300" loading="lazy">
             </div>
-            <div class="portfolio-info">
-              <span class="portfolio-tag">UI/UX Design</span>
-              <h3 class="portfolio-name">E-Commerce Mobile Application</h3>
-              <p class="portfolio-desc">Perancangan antarmuka aplikasi belanja seluler dengan navigasi intuitif, konsistensi visual, dan pengalaman pengguna yang nyaman.</p>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-period">Sep 2026 - Sekarang</span>
+                <span class="project-role">Mobile Developer & Koordinator QA</span>
+              </div>
+              <h3 class="project-name">Gayaku, Aplikasi Mobile Rekomendasi Outfit</h3>
+              <p class="project-tech">Flutter · REST API</p>
+              <ul class="project-points">
+                <li>Mengembangkan modul katalog dan Wardrobe Planner, serta mengintegrasikan REST API.</li>
+                <li>Memimpin pengujian QA dengan 122 test case end-to-end dan mengelola dataset sebanyak 800+ item.</li>
+              </ul>
+              <div class="project-links" id="links-gayaku"></div>
             </div>
           </article>
 
-          <article class="portfolio-card">
-            <div class="portfolio-image-box">
-              <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?auto=format&fit=crop&w=800&q=80" alt="Brand Identity and Poster">
+          <article class="project-card fade-in">
+            <div class="project-thumb">
+              <img src="assets/Tampilan Kamera Sedang Memindai QR Code Tamu.png"
+                alt="Evently, Sistem Manajemen Tamu Undangan Digital" width="480" height="300" loading="lazy">
             </div>
-            <div class="portfolio-info">
-              <span class="portfolio-tag">Graphic Design</span>
-              <h3 class="portfolio-name">Brand Identity &amp; Poster Kreatif</h3>
-              <p class="portfolio-desc">Eksplorasi tipografi ekspresif, tata letak visual dinamis, dan identitas merek modern dengan palet warna yang harmonis.</p>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-period">Feb 2025 - Jun 2025</span>
+                <span class="project-role">System Analyst & Full-Stack Core Developer</span>
+              </div>
+              <h3 class="project-name">Evently, Sistem Manajemen Tamu Undangan Digital</h3>
+              <p class="project-tech">Laravel · Tailwind CSS · PostgreSQL</p>
+              <ul class="project-points">
+                <li>Menyusun SKPL dan memodelkan sistem.</li>
+                <li>Membangun antarmuka halaman landing, login, dasbor, dan sidebar admin.</li>
+              </ul>
+              <div class="project-links" id="links-evently"></div>
             </div>
           </article>
 
-          <article class="portfolio-card">
-            <div class="portfolio-image-box">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="Web Dashboard Interface">
+          <article class="project-card fade-in">
+            <div class="project-thumb">
+              <img src="assets/LandingPageLabDT.png" alt="Sistem Informasi Manajemen Lab Teknologi Data" width="480"
+                height="300" loading="lazy">
             </div>
-            <div class="portfolio-info">
-              <span class="portfolio-tag">Web Design</span>
-              <h3 class="portfolio-name">Analytics &amp; Dashboard Concept</h3>
-              <p class="portfolio-desc">Konsep desain dasbor analitik web yang bersih, terstruktur rapi, dan memprioritaskan kemudahan membaca visualisasi data.</p>
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-period">Sep 2024 - Des 2024</span>
+                <span class="project-role">Frontend Developer & Dokumentasi</span>
+              </div>
+              <h3 class="project-name">Sistem Informasi Manajemen Lab Teknologi Data</h3>
+              <p class="project-tech">PHP · PostgreSQL · Tailwind CSS</p>
+              <ul class="project-points">
+                <li>Membangun antarmuka publik (berita, agenda, galeri, publikasi) beserta validasi formulir.</li>
+                <li>Menyusun dokumen PBL, SKPL, ERD, serta dokumentasi basis data.</li>
+              </ul>
+              <div class="project-links" id="links-lab"></div>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="kontak" class="contact-section">
+    <section class="section section-alt" id="pengalaman">
       <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Kontak &amp; Kolaborasi</h2>
-          <p class="section-subtitle">Mari saling terhubung untuk kolaborasi proyek kreatif, peluang kerja sama, atau berdiskusi seputar desain dan teknologi.</p>
+        <h2 class="section-title">Pengalaman Organisasi</h2>
+        <div class="org-card fade-in">
+          <div class="org-header">
+            <div>
+              <h3 class="org-role">Staf Ahli Divisi Kominfo</h3>
+              <h4 class="org-name">FORMADIKSI POLINEMA</h4>
+            </div>
+            <span class="org-period">Sep 2024 - Sekarang</span>
+          </div>
+          <p class="org-desc">
+            Merancang konten feed Instagram dan pamflet kegiatan menggunakan Canva dan CapCut, serta menjaga konsistensi
+            visual pada seluruh desain.
+          </p>
+          <div class="org-gallery-wrap" id="org-gallery-wrap" style="display: none;">
+            <div class="org-gallery" id="org-gallery">
+              <button class="gallery-arrow gallery-prev" id="gallery-prev"
+                aria-label="Foto sebelumnya">&#10094;</button>
+              <div class="gallery-viewport">
+                <img src="" alt="" id="gallery-img" class="gallery-img" width="800" height="450" loading="lazy">
+              </div>
+              <button class="gallery-arrow gallery-next" id="gallery-next"
+                aria-label="Foto berikutnya">&#10095;</button>
+            </div>
+            <div class="gallery-dots" id="gallery-dots"></div>
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="prestasi" style="display: none;">
+      <div class="container">
+        <h2 class="section-title">Prestasi & Sertifikat</h2>
+        <div class="timeline" id="prestasi-timeline" style="display: none;"></div>
+        <div class="cert-grid" id="sertifikat-grid" style="display: none;"></div>
+        <div class="cert-more-wrap" id="cert-more-wrap" style="display: none;">
+          <button type="button" class="btn btn-outline btn-sm" id="btn-cert-more">Lihat semua</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="kontak">
+      <div class="container">
+        <h2 class="section-title">Kontak</h2>
         <div class="contact-grid">
-          <a href="mailto:nuralfiyanti@gmail.com" class="contact-card">
+          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=nuralfiyanti05@gmail.com" target="_blank"
+            rel="noopener noreferrer" class="contact-item fade-in">
             <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
             </div>
-            <div class="contact-info">
-              <h4>Email</h4>
-              <p>nuralfiyanti@gmail.com</p>
+            <div>
+              <span class="contact-label">Email</span>
+              <p class="contact-val">nuralfiyanti05@gmail.com</p>
             </div>
           </a>
-
-          <a href="https://linkedin.com/in/nur-alfiyanti-149208449" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <a href="https://wa.me/6281934765348" target="_blank" rel="noopener noreferrer" class="contact-item fade-in">
             <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
             </div>
-            <div class="contact-info">
-              <h4>LinkedIn</h4>
-              <p>nur-alfiyanti-149208449</p>
+            <div>
+              <span class="contact-label">WhatsApp</span>
+              <p class="contact-val">+62 819-3476-5348</p>
             </div>
           </a>
-
-          <a href="https://github.com/nuralfiyanti" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <a href="https://github.com/nuralfiyanti" target="_blank" rel="noopener noreferrer"
+            class="contact-item fade-in">
             <div class="contact-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
             </div>
-            <div class="contact-info">
-              <h4>GitHub</h4>
-              <p>github.com/nuralfiyanti</p>
+            <div>
+              <span class="contact-label">GitHub</span>
+              <p class="contact-val">github.com/nuralfiyanti</p>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/nur-alfiyanti-149208449/" target="_blank" rel="noopener noreferrer"
+            class="contact-item fade-in">
+            <div class="contact-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            <div>
+              <span class="contact-label">LinkedIn</span>
+              <p class="contact-val">nur-alfiyanti-149208449</p>
             </div>
           </a>
         </div>
@@ -128,8 +294,25 @@
 
   <footer class="footer">
     <div class="container footer-container">
-      <p>&copy; 2026 Nur Alfiyanti. All rights reserved.</p>
+      <p class="footer-location">Malang, Jawa Timur</p>
+      <p>&copy; <span id="current-year"></span> Nur Alfiyanti.</p>
     </div>
   </footer>
+
+  <div class="modal" id="image-modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close" aria-label="Tutup">&times;</button>
+      <button class="modal-nav modal-prev" id="modal-prev" aria-label="Sebelumnya">&#10094;</button>
+      <button class="modal-nav modal-next" id="modal-next" aria-label="Berikutnya">&#10095;</button>
+      <div class="modal-media">
+        <img src="" alt="Pratinjau" id="modal-img">
+      </div>
+      <p id="modal-caption" class="modal-caption"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
